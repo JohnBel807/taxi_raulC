@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Taxi Bucaramanga Premium — Traslados de Lujo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header" id="inicio">
+  <div class="header-inner">
+    <a href="#inicio" class="logo">
+      <span class="logo-mark">B</span>
+      <span class="logo-text">TAXI <strong>BUCARAMANGA</strong> PREMIUM</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="main-nav" id="mainNav">
+      <a href="#inicio">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#reservar">Reservar</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== HERO CAROUSEL ===== -->
+<section class="hero" aria-label="Presentación">
+  <div class="hero-track" id="heroTrack">
+
+    <div class="hero-slide is-active">
+      <img src="images/hero-aeropuerto.jpg" alt="Taxi premium en el Aeropuerto Internacional Palonegro, Bucaramanga">
+      <div class="hero-overlay"></div>
+      <div class="hero-copy">
+        <p class="hero-eyebrow">Aeropuerto Palonegro</p>
+        <h1>Traslados al Aeropuerto Palonegro con Elegancia</h1>
+        <p class="hero-sub">Puntualidad y confort desde la pista hasta su destino.</p>
+        <a href="#reservar" class="btn btn-primary">Reservar Ahora</a>
+      </div>
+    </div>
+
+    <div class="hero-slide">
+      <img src="images/hero-ciudad.jpg" alt="Taxi premium frente a un edificio moderno en Bucaramanga">
+      <div class="hero-overlay"></div>
+      <div class="hero-copy">
+        <p class="hero-eyebrow">Ciudad Bonita</p>
+        <h1>Recorre la Ciudad Bonita con Comodidad</h1>
+        <p class="hero-sub">Conductores locales, rutas eficientes, trato impecable.</p>
+        <a href="#reservar" class="btn btn-primary">Reservar Ahora</a>
+      </div>
+    </div>
+
+    <div class="hero-slide">
+      <img src="images/hero-noche.jpg" alt="Taxi premium disponible para servicio nocturno en Bucaramanga">
+      <div class="hero-overlay hero-overlay--night"></div>
+      <div class="hero-copy">
+        <p class="hero-eyebrow">24 / 7</p>
+        <h1>Disponibilidad 24/7. Su Transporte Seguro de Noche</h1>
+        <p class="hero-sub">Estamos en marcha a cualquier hora, todos los días del año.</p>
+        <a href="#reservar" class="btn btn-primary">Reservar Ahora</a>
+      </div>
+    </div>
+
+  </div>
+
+  <button class="hero-arrow hero-arrow--prev" id="prevSlide" aria-label="Diapositiva anterior">&#8249;</button>
+  <button class="hero-arrow hero-arrow--next" id="nextSlide" aria-label="Siguiente diapositiva">&#8250;</button>
+
+  <div class="hero-dots" id="heroDots"></div>
+</section>
+
+<!-- ===== NUESTRA FLOTA ===== -->
+<section class="fleet" id="flota">
+  <div class="section-inner fleet-grid">
+    <div class="fleet-image">
+      <img src="images/flota-taxi.jpg" alt="Vehículo de la flota Taxi Bucaramanga Premium">
+    </div>
+    <div class="fleet-copy">
+      <p class="section-eyebrow">Nuestra Flota</p>
+      <h2>Su Vehículo Espera</h2>
+      <p>Cada unidad de nuestra flota pasa por una revisión rigurosa antes de salir a la vía: interior impecable, clima controlado y conductores certificados. Servicio público autorizado, identificado y con seguimiento en tiempo real desde el momento en que confirma su reserva.</p>
+      <ul class="fleet-features">
+        <li>Vehículos verificados y con distintivo de servicio público</li>
+        <li>Conductores con experiencia en rutas urbanas y aeropuerto</li>
+        <li>Seguimiento del viaje y confirmación por WhatsApp</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===== DESTINOS POPULARES / SERVICIOS ===== -->
+<section class="destinations" id="servicios">
+  <div class="section-inner">
+    <p class="section-eyebrow section-eyebrow--light">Servicios</p>
+    <h2 class="section-title--light">Destinos Populares</h2>
+
+    <div class="destinations-grid">
+      <article class="dest-card">
+        <div class="dest-icon">✈</div>
+        <h3>Traslado Aeropuerto</h3>
+        <p>Conexión directa hacia y desde el Aeropuerto Internacional Palonegro, con monitoreo de vuelos incluido.</p>
+      </article>
+
+      <article class="dest-card">
+        <div class="dest-icon">🏙</div>
+        <h3>Tours de Ciudad</h3>
+        <p>Recorridos por los puntos más representativos de Bucaramanga, a su ritmo y con guía local.</p>
+      </article>
+
+      <article class="dest-card">
+        <div class="dest-icon">🌙</div>
+        <h3>Servicio Nocturno</h3>
+        <p>Disponibilidad las 24 horas para regresos seguros de eventos, vuelos tardíos o reuniones nocturnas.</p>
+      </article>
+
+      <article class="dest-card">
+        <div class="dest-icon">💼</div>
+        <h3>Viajes Corporativos</h3>
+        <p>Traslados puntuales para ejecutivos y equipos, con facturación empresarial disponible.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== RESERVAR ===== -->
+<section class="booking" id="reservar">
+  <div class="section-inner booking-inner">
+    <p class="section-eyebrow">Reservar</p>
+    <h2>Su Próximo Viaje, a un Clic</h2>
+    <p class="booking-sub">Escríbanos con su fecha, hora y destino y confirmamos su traslado en minutos.</p>
+    <form class="booking-form" id="bookingForm">
+      <div class="form-row">
+        <input type="text" name="nombre" placeholder="Nombre completo" required>
+        <input type="tel" name="telefono" placeholder="Teléfono / WhatsApp" required>
+      </div>
+      <div class="form-row">
+        <input type="text" name="origen" placeholder="Origen" required>
+        <input type="text" name="destino" placeholder="Destino" required>
+      </div>
+      <div class="form-row">
+        <input type="datetime-local" name="fecha" required>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">Confirmar Reserva</button>
+      <p class="form-note" id="formNote" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer" id="contacto">
+  <div class="section-inner footer-grid">
+    <div>
+      <a href="#inicio" class="logo logo--footer">
+        <span class="logo-mark">B</span>
+        <span class="logo-text">TAXI <strong>BUCARAMANGA</strong> PREMIUM</span>
+      </a>
+      <p class="footer-tag">Servicio público de transporte individual en Bucaramanga y su área metropolitana.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contacto</h4>
+      <p><a href="https://wa.me/573184180369" target="_blank" rel="noopener noreferrer">WhatsApp: +57 318 418 0369</a></p>
+      <p>Correo: reservas@taxibucaramangapremium.com</p>
+      <p>Bucaramanga, Santander, Colombia</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Enlaces</h4>
+      <a href="#servicios">Servicios</a>
+      <a href="#reservar">Reservar</a>
+      <a href="#flota">Nuestra Flota</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <a href="#">Términos y Condiciones</a>
+      <a href="#">Política de Privacidad</a>
+      <a href="#">Habeas Data</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> Taxi Bucaramanga Premium. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<a href="https://wa.me/573184180369?text=Hola%2C%20quiero%20reservar%20un%20taxi%20premium%20en%20Bucaramanga"
+   class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Escribir por WhatsApp">
+  <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.472-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+    <path d="M20.52 3.449C18.24 1.245 15.24 0 12.045 0 5.463 0 .104 5.36.101 11.943c0 2.105.548 4.16 1.588 5.98L0 24l6.223-1.632a11.9 11.9 0 0 0 5.816 1.482h.005c6.585 0 11.946-5.363 11.949-11.947a11.9 11.9 0 0 0-3.473-8.454zm-8.475 18.38h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.981.999-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.253C2.163 6.477 6.62 2.02 12.05 2.02c2.629 0 5.101 1.024 6.959 2.885a9.79 9.79 0 0 1 2.876 6.966c-.003 5.43-4.46 9.958-9.845 9.958z"/>
+  </svg>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
