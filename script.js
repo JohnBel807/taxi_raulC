@@ -109,12 +109,40 @@ document.addEventListener('DOMContentLoaded', () => {
   const formNote = document.getElementById('formNote');
 
   if (bookingForm) {
+    const WHATSAPP_NUMBER = '573184180369'; // +57 318 418 0369
+
     bookingForm.addEventListener('submit', (e) => {
       e.preventDefault();
       const data = new FormData(bookingForm);
       const nombre = data.get('nombre');
+      const telefono = data.get('telefono');
+      const origen = data.get('origen');
+      const destino = data.get('destino');
+      const fechaRaw = data.get('fecha');
 
-      formNote.textContent = `Gracias, ${nombre}. Hemos recibido su solicitud y le confirmaremos por WhatsApp en breve.`;
+      // Formatear la fecha/hora de forma legible
+      let fechaTexto = fechaRaw;
+      if (fechaRaw) {
+        const fechaObj = new Date(fechaRaw);
+        fechaTexto = fechaObj.toLocaleString('es-CO', {
+          dateStyle: 'long',
+          timeStyle: 'short'
+        });
+      }
+
+      const mensaje =
+        `Hola, quiero reservar un taxi premium:%0A` +
+        `%0A*Nombre:* ${nombre}` +
+        `%0A*Teléfono:* ${telefono}` +
+        `%0A*Origen:* ${origen}` +
+        `%0A*Destino:* ${destino}` +
+        `%0A*Fecha y hora:* ${fechaTexto}`;
+
+      const whatsappURL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(decodeURIComponent(mensaje.replace(/%0A/g, '\n')))}`;
+
+      formNote.textContent = `Gracias, ${nombre}. Le estamos redirigiendo a WhatsApp para confirmar su reserva...`;
+
+      window.open(whatsappURL, '_blank', 'noopener,noreferrer');
       bookingForm.reset();
     });
   }
